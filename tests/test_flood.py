@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta, timezone
 
-from aw_core.models import Event
-from aw_transform import flood
+from aa_core.models import Event
+from aa_transform import flood
 
 
 now = datetime.now(tz=timezone.utc)

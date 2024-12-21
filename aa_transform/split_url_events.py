@@ -3,7 +3,7 @@ from typing import List
 
 from urllib.parse import urlparse
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 logger = logging.getLogger(__name__)
 

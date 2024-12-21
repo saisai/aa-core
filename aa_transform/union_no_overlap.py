@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, timezone
 
 from timeslot import Timeslot
 
-from aw_core import Event
+from aa_core import Event
 
 
 def _split_event(e: Event, dt: datetime) -> Tuple[Event, Optional[Event]]:

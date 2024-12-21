@@ -2,7 +2,7 @@ from typing import Pattern, List, Iterable, Tuple, Dict, Optional, Any
 from functools import reduce
 import re
 
-from aw_core import Event
+from aa_core import Event
 
 
 Tag = str

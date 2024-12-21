@@ -4,9 +4,9 @@ from datetime import datetime, timedelta, timezone
 
 import iso8601
 import pytest
-from aw_core.models import Event
-from aw_datastore import get_storage_methods
-from aw_datastore.storages import PeeweeStorage
+from aa_core.models import Event
+from aa_datastore import get_storage_methods
+from aa_datastore.storages import PeeweeStorage
 
 from . import context  # noqa: F401
 from .utils import param_datastore_objects, param_testing_buckets_cm

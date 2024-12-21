@@ -3,15 +3,15 @@ from typing import Any, Dict
 
 import iso8601
 import pytest
-from aw_core.models import Event
-from aw_datastore.storages import MemoryStorage
-from aw_query import query
-from aw_query.exceptions import (
+from aa_core.models import Event
+from aa_datastore.storages import MemoryStorage
+from aa_query import query
+from aa_query.exceptions import (
     QueryFunctionException,
     QueryInterpretException,
     QueryParseException,
 )
-from aw_query.query2 import (
+from aa_query.query2 import (
     QDict,
     QFunction,
     QInteger,

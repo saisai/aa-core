@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
-from aw_core.models import Event
-from aw_transform import heartbeat_merge, heartbeat_reduce
+from aa_core.models import Event
+from aa_transform import heartbeat_merge, heartbeat_reduce
 
 
 def test_heartbeat_merge():

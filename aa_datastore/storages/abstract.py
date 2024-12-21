@@ -2,7 +2,7 @@ from abc import ABCMeta, abstractmethod
 from datetime import datetime
 from typing import Dict, List, Optional
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 
 class AbstractStorage(metaclass=ABCMeta):

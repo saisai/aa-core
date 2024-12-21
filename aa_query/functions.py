@@ -10,7 +10,7 @@ from typing import (
 )
 
 import iso8601
-from aw_core.models import Event
+from aa_core.models import Event
 from aw_datastore import Datastore
 from aw_transform import (
     Rule,

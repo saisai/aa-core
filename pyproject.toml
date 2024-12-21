@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aw-core"
+name = "aa-core"
 version = "0.5.17"
 description = "Core library for ActivityWatch"
 authors = ["Erik Bjäreholt <erik@bjareho.lt>", "Johan Bjäreholt <johan@bjareho.lt>"]
@@ -9,14 +9,14 @@ homepage = "https://activitywatch.net/"
 repository = "https://github.com/ActivityWatch/aw-core/"
 documentation = "https://docs.activitywatch.net/"
 packages = [
-    { include = "aw_core" },
-    { include = "aw_datastore" },
-    { include = "aw_transform" },
-    { include = "aw_query" },
+    { include = "aa_core" },
+    { include = "aa_datastore" },
+    { include = "aa_transform" },
+    { include = "aa_query" },
 ]
 
 [tool.poetry.scripts]
-aw-cli = "aw_cli.__main__:main"
+aa-cli = "aa_cli.__main__:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"

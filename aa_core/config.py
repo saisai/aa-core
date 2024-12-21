@@ -5,7 +5,7 @@ from typing import Union
 import tomlkit
 from deprecation import deprecated
 
-from aw_core import dirs
+from aa_core import dirs
 
 logger = logging.getLogger(__name__)
 

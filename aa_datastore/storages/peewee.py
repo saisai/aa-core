@@ -10,8 +10,8 @@ from typing import (
 )
 
 import iso8601
-from aw_core.dirs import get_data_dir
-from aw_core.models import Event
+from aa_core.dirs import get_data_dir
+from aa_core.models import Event
 from playhouse.migrate import SqliteMigrator, migrate
 from playhouse.sqlite_ext import SqliteExtDatabase
 

@@ -2,7 +2,7 @@ import logging
 from typing import List, Iterable, Tuple
 from copy import deepcopy
 
-from aw_core import Event
+from aa_core import Event
 from timeslot import Timeslot
 
 logger = logging.getLogger(__name__)

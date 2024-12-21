@@ -3,7 +3,7 @@ import sys
 from datetime import datetime
 from typing import Dict, List, Optional
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 from . import logger
 from .abstract import AbstractStorage

@@ -4,7 +4,7 @@ build:
 	poetry install
 
 test:
-	python -m pytest tests -v --cov=aw_core --cov=aw_datastore --cov=aw_transform --cov=aw_query
+	python -m pytest tests -v --cov=aa_core --cov=aa_datastore --cov=aa_transform --cov=aa_query
 
 .coverage:
 	make test
@@ -13,13 +13,13 @@ coverage_html: .coverage
 	python -m coverage html -d coverage_html
 
 benchmark:
-	python -m aw_datastore.benchmark
+	python -m aa_datastore.benchmark
 
 typecheck:
-	export MYPYPATH=./stubs; python -m mypy aw_core aw_datastore aw_transform aw_query --show-traceback --ignore-missing-imports --follow-imports=skip
+	export MYPYPATH=./stubs; python -m mypy aa_core aa_datastore aa_transform aa_query --show-traceback --ignore-missing-imports --follow-imports=skip
 
 typecheck-strict:
-	export MYPYPATH=./stubs; python -m mypy aw_core aw_datastore aw_transform aw_query --strict-optional --check-untyped-defs; echo "Not a failing step"
+	export MYPYPATH=./stubs; python -m mypy aa_core aa_datastore aa_transform aa_query --strict-optional --check-untyped-defs; echo "Not a failing step"
 
 lint:
 	ruff check .
@@ -32,4 +32,4 @@ format:
 
 clean:
 	rm -rf build dist
-	rm -rf aw_core/__pycache__ aw_datastore/__pycache__
+	rm -rf aa_core/__pycache__ aa_datastore/__pycache__

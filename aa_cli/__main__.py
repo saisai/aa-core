@@ -9,7 +9,7 @@ import subprocess
 
 import click
 
-from aw_cli.log import find_oldest_log, print_log, LOGLEVELS
+from aa_cli.log import find_oldest_log, print_log, LOGLEVELS
 from typing import Optional
 
 

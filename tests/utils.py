@@ -2,7 +2,7 @@ import logging
 import random
 from datetime import datetime, timezone
 
-from aw_datastore import Datastore, get_storage_methods
+from aa_datastore import Datastore, get_storage_methods
 
 logging.basicConfig(level=logging.DEBUG)
 

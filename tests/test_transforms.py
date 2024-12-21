@@ -1,8 +1,8 @@
 from pprint import pprint
 from datetime import datetime, timedelta, timezone
 
-from aw_core.models import Event
-from aw_transform import (
+from aa_core.models import Event
+from aa_transform import (
     filter_period_intersect,
     filter_keyvals_regex,
     filter_keyvals,
@@ -20,7 +20,7 @@ from aw_transform import (
     tag,
     Rule,
 )
-from aw_transform.filter_period_intersect import _intersecting_eventpairs
+from aa_transform.filter_period_intersect import _intersecting_eventpairs
 
 
 def test_simplify_string():

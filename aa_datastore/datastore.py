@@ -8,7 +8,7 @@ from typing import (
     Union,
 )
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 from .storages import AbstractStorage
 

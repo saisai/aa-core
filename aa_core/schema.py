@@ -7,7 +7,7 @@ def _this_dir() -> str:
 
 
 def _schema_dir() -> str:
-    return os.path.join(os.path.dirname(_this_dir()), "aw_core", "schemas")
+    return os.path.join(os.path.dirname(_this_dir()), "aa_core", "schemas")
 
 
 def get_json_schema(name: str) -> dict:

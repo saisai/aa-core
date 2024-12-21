@@ -4,7 +4,7 @@ from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from typing import Callable
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 from aw_datastore import get_storage_methods
 from aw_datastore.storages import AbstractStorage

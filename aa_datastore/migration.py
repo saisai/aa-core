@@ -2,7 +2,7 @@ import logging
 import os
 from typing import List, Optional
 
-from aw_core.dirs import get_data_dir
+from aa_core.dirs import get_data_dir
 
 from .storages import AbstractStorage
 

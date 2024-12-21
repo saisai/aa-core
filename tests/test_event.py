@@ -3,7 +3,7 @@ import json
 
 import pytest
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 valid_timestamp = "1937-01-01T12:00:27.87+00:20"
 

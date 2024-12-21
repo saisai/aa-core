@@ -2,7 +2,7 @@ import re
 from copy import deepcopy
 from typing import List
 
-from aw_core import Event
+from aa_core import Event
 
 
 def simplify_string(events: List[Event], key: str = "title") -> List[Event]:

@@ -5,8 +5,8 @@ import sqlite3
 from datetime import datetime, timedelta, timezone
 from typing import Iterable, List, Optional
 
-from aw_core.dirs import get_data_dir
-from aw_core.models import Event
+from aa_core.dirs import get_data_dir
+from aa_core.models import Event
 
 from .abstract import AbstractStorage
 

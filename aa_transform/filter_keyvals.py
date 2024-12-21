@@ -2,7 +2,7 @@ import logging
 from typing import List
 import re
 
-from aw_core.models import Event
+from aa_core.models import Event
 
 logger = logging.getLogger(__name__)
 

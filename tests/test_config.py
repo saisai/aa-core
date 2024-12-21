@@ -4,15 +4,15 @@ from pathlib import Path
 
 import deprecation
 import pytest
-from aw_core import dirs
-from aw_core.config import (
+from aa_core import dirs
+from aa_core.config import (
     load_config,
     load_config_toml,
     save_config,
     save_config_toml,
 )
 
-appname = "aw-core-test"
+appname = "aa-core-test"
 section = "section"
 config_dir = dirs.get_config_dir(appname)
 
