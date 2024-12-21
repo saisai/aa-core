@@ -27,7 +27,7 @@ def detect_db_files(
 
 
 def check_for_migration(datastore: AbstractStorage):
-    data_dir = get_data_dir("aw-server")
+    data_dir = get_data_dir("aa-server")
 
     if datastore.sid == "sqlite":
         peewee_type = "peewee-sqlite"

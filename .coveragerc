@@ -2,7 +2,7 @@
 [run]
 branch = True
 omit =
-    aw_datastore/benchmark.py
+    aa_datastore/benchmark.py
 
 [report]
 # Regexes for lines to exclude from consideration

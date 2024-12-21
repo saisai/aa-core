@@ -11,7 +11,7 @@ from typing import (
     Type,
 )
 
-from aw_datastore import Datastore
+from aa_datastore import Datastore
 
 from .exceptions import QueryInterpretException, QueryParseException
 from .functions import functions

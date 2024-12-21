@@ -11,8 +11,8 @@ from typing import (
 
 import iso8601
 from aa_core.models import Event
-from aw_datastore import Datastore
-from aw_transform import (
+from aa_datastore import Datastore
+from aa_transform import (
     Rule,
     categorize,
     chunk_events_by_key,
@@ -73,9 +73,9 @@ def q2_function(transform_func=None):
 
     def h(f):
         sig = signature(f)
-        # If function lacks docstring, use docstring from underlying function in aw_transform
+        # If function lacks docstring, use docstring from underlying function in aa_transform
         if transform_func and transform_func.__doc__ and not f.__doc__:
-            f.__doc__ = f".. note:: Documentation automatically copied from underlying function `aw_transform.{transform_func.__name__}`\n\n{transform_func.__doc__}"
+            f.__doc__ = f".. note:: Documentation automatically copied from underlying function `aa_transform.{transform_func.__name__}`\n\n{transform_func.__doc__}"
 
         @wraps(f)
         def g(datastore: Datastore, namespace: TNamespace, *args, **kwargs):

@@ -6,8 +6,8 @@ from typing import Callable
 
 from aa_core.models import Event
 
-from aw_datastore import get_storage_methods
-from aw_datastore.storages import AbstractStorage
+from aa_datastore import get_storage_methods
+from aa_datastore.storages import AbstractStorage
 
 td1s = timedelta(seconds=1)
 
