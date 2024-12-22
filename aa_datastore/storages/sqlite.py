@@ -79,7 +79,7 @@ class SqliteStorage(AbstractStorage):
 
         ds_name = self.sid + ("-testing" if testing else "")
         if not filepath:
-            data_dir = get_data_dir("aw-server")
+            data_dir = get_data_dir("aa-server")
             filename = ds_name + f".v{LATEST_VERSION}" + ".db"
             filepath = os.path.join(data_dir, filename)
 
@@ -99,7 +99,7 @@ class SqliteStorage(AbstractStorage):
         if new_db_file and not ignore_migration_check:
             logger.info("Created new SQlite db file")
 
-            from aw_datastore import check_for_migration  # fmt: skip
+            from aa_datastore import check_for_migration  # fmt: skip
 
             check_for_migration(self)
 

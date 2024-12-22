@@ -23,14 +23,14 @@ def main(testing: bool = False):
 @click.pass_context
 def qt(ctx):
     return subprocess.call(
-        ["aw-qt"] + (["--testing"] if ctx.parent.params["testing"] else [])
+        ["aa-qt"] + (["--testing"] if ctx.parent.params["testing"] else [])
     )
 
 
 @main.command()
 def directories():
     # Print all directories
-    from aw_core.dirs import get_data_dir, get_config_dir, get_cache_dir, get_log_dir
+    from aa_core.dirs import get_data_dir, get_config_dir, get_cache_dir, get_log_dir
 
     print("Directory paths used")
     print(" - config: ", get_config_dir(None))
@@ -58,7 +58,7 @@ def logs(
     since: Optional[datetime] = None,
     level: Optional[str] = None,
 ):
-    from aw_core.dirs import get_log_dir
+    from aa_core.dirs import get_log_dir
 
     testing = ctx.parent.params["testing"]
     logdir: Path = Path(get_log_dir(None))

@@ -135,7 +135,7 @@ class PeeweeStorage(AbstractStorage):
     sid = "peewee"
 
     def __init__(self, testing: bool = True, filepath: Optional[str] = None) -> None:
-        data_dir = get_data_dir("aw-server")
+        data_dir = get_data_dir("aa-server")
 
         if not filepath:
             filename = (
